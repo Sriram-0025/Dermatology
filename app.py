@@ -5,6 +5,13 @@ import streamlit as st
 from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import load_model
 import os
+import streamlit as st
+from sklearn.preprocessing import StandardScaler
+
+st.title("Testing scikit-learn")
+
+scaler = StandardScaler()
+st.write("scikit-learn imported successfully!")
 
 # Load the model from Google Drive
 model_path = '/content/drive/MyDrive/DEEP LEARNING/saved_model/my_model.h5'
